@@ -11,7 +11,7 @@ node ('master') {
     stage('Build-and-Tag') {
     /* This builds the actual image; synonymous to
          * docker build on the command line */
-      sh 'echo Build & Tag'
+      sh 'echo Build and Tag'
     }
 
     stage('Post-to-dockerhub') {
