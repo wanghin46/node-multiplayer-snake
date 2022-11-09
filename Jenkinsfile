@@ -19,7 +19,7 @@ node any {
     }
 
     stage('SECURITY-IMAGE-SCANNER'){
-     sh 'echo scan image for security''
+     sh 'echo scan image for security'
     }
 
     stage('Pull-image-server') {
