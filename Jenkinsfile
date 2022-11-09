@@ -1,4 +1,8 @@
-agent any {  
+pipeline {
+agent any 
+
+   stages {
+
     stage('Cloning Git') {
         /* Let's make sure we have the repository cloned to our workspace */
        checkout scm
@@ -30,5 +34,5 @@ agent any {
         {
          sh 'echo dast scan for security'
         }
- 
+ }
 }
